@@ -1,0 +1,409 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+ */
+
+ *,*::after,*::before{
+     box-sizing: border-box;
+ }
+
+ img{
+     max-width: 100%;
+ }
+
+ body{
+     margin: 0;
+     padding: 0;
+ }
+
+ h1,h2,h3{
+     margin-top: 0;
+     color: white;
+     font-family: 'Oswald', sans-serif;
+ }
+
+ p{
+    font-family: 'Montserrat', sans-serif;
+     font-size: 1.3rem;
+ }
+
+ .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-toggle{
+    display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+header{
+    background-color: #2E323F;
+    text-align: center;
+}
+
+.nav-adjust{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 1em;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.nav__link{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.nav__item:hover{
+    opacity: 80%;
+}
+
+.nav__link--button{
+    border-radius: 100px;
+    background-color: #A59678;
+    padding: 0.25em 0.75em;
+}
+.nav__link--button:hover{
+    opacity: 80%;
+}
+
+.nav__item + .nav__item{
+    margin-left: 1em;
+}
+
+.section--one{
+    background-color:#3B4050;
+    padding: 4em 0;
+}
+
+.hero_text--header{
+    width: 43%;
+    line-height: 1.2em;
+    font-size: 3.625rem;
+}
+
+.hero_text--span{
+    color: #A59678;
+}
+
+.hero-content{
+    color: white;
+    width: 55%;
+    align-self:center;
+}
+
+.hero-content--button{
+    background-color: #A59678;
+    padding: 0.25em 1.5em;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 100px;
+    margin-top: 0;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+}
+
+.hero-content--button:hover{
+    opacity: 80%;
+}
+
+.section--two{
+    padding: 3em 0;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+.section--two h3{
+    color: #A59678;
+}
+
+.section--two p{
+    font-size: 0.9rem;
+}
+
+.col + .col{
+    margin-left: 5em;
+}
+
+.section--three{
+    padding: 4em 0;
+}
+
+.section--three h2{
+    color: #A59678;
+}
+
+.section--three p {
+    font-size: 1rem;
+}
+
+.main_content{
+    width: 60%;
+}
+
+.sidebar{
+    width: 30%;
+    text-align: center;
+}
+
+.sidebar__point{
+    background-color: #3B4050;
+    padding: 1em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.footer{
+    background-color: #3B4050;
+    padding: 4em 0;
+}
+
+.footer__content{
+    display: flex;
+}
+
+.footer h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+}
+
+.footer h3{
+    color: #A59678;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about{
+    color: white;
+    width: 40%;
+}
+
+.footer-point{
+    width: 50%;
+}
+
+.footer-point a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-point a:hover{
+    opacity: 70%;
+}
+
+.footer-point--list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.footer li + li{
+    margin-top: 2em;
+}
+
+
+
+@media (max-width:800px){
+
+    .container {
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
+        /* added for nav-toggle positioning */
+        position: relative;
+    }
+
+.section--three .row {
+flex-direction: column;
+}
+.main_content{
+    width: 100%;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.sidebar__point + .sidebar__point{
+    margin-left: 1em;
+}
+
+.footer__content{
+    flex-direction: column;
+}
+
+.about{
+    width: 100%;
+}
+
+.about h3{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer_links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 2em;
+}
+
+.footer-point{
+    width: 30%;
+}
+
+}
+
+@media (max-width:580px){
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sidebar__point + .sidebar__point{
+        margin-left: 0em;
+    }
+
+    .section--two .row{
+        flex-direction: column;
+    }
+
+    .col + .col{
+        margin-left: 0;
+        margin-top: 1em;
+    }
+
+    .footer-point{
+        width: 35%;
+    }
+
+    .footer-point--list{
+        padding-inline-start: 0;
+    }
+
+    .section--one .row{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero_text--header{
+        width: 100%;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    /* nav */
+    .hamburger {
+        width: 50%;
+        position: relative;
+    }
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        background: white;
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        width: 100%;
+    }
+    
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+    
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+
+    .nav-toggle {
+        cursor: pointer;
+        border: 0;
+        width: 3em;
+        height: 3em;
+        padding: 0em;
+        border-radius: 50%;
+        background: #3B4050;
+        color: white;
+        transition: opacity 250ms ease;
+        position: absolute;
+        left: 0;
+        top: 0.3em;
+        display: block;
+    }
+    
+    .nav-toggle:focus,
+    .nav-toggle:hover {
+        opacity: .75;
+    }
+
+    .nav {
+        visibility: hidden;
+        height: auto;
+        position: absolute;
+    }
+
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    } 
+
+    .nav-adjust{
+        padding: 0.5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        padding-inline-start: 1em;
+        margin-top: 2em;
+    }
+
+    .nav__item{
+        font-size: 1.5rem;
+    }
+
+    .nav__item:hover{
+        opacity: 80%;
+    }
+
+    .nav__item + .nav__item{
+        margin-left: 0em;
+        margin-top: 2em;
+    }
+}
